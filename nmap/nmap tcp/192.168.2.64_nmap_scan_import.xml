@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sun Oct  8 11:26:49 2017 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon_enum/results/exam/192.168.2.64.nmap -oX /root/scripts/recon_enum/results/exam/nmap/192.168.2.64_nmap_scan_import.xml 192.168.2.64 -->
+<nmaprun scanner="nmap" args="nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon_enum/results/exam/192.168.2.64.nmap -oX /root/scripts/recon_enum/results/exam/nmap/192.168.2.64_nmap_scan_import.xml 192.168.2.64" start="1507480009" startstr="Sun Oct  8 11:26:49 2017" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="NSE" time="1507480009"/>
+<taskend task="NSE" time="1507480009"/>
+<taskbegin task="NSE" time="1507480009"/>
+<taskend task="NSE" time="1507480009"/>
+<taskbegin task="ARP Ping Scan" time="1507480009"/>
+<taskend task="ARP Ping Scan" time="1507480010" extrainfo="1 total hosts"/>
+<taskbegin task="Parallel DNS resolution of 1 host." time="1507480010"/>
+<taskend task="Parallel DNS resolution of 1 host." time="1507480010"/>
+<taskbegin task="SYN Stealth Scan" time="1507480010"/>
+<taskprogress task="SYN Stealth Scan" time="1507480041" percent="8.90" remaining="318" etc="1507480358"/>
+<taskprogress task="SYN Stealth Scan" time="1507480071" percent="10.96" remaining="496" etc="1507480566"/>
+<taskprogress task="SYN Stealth Scan" time="1507480101" percent="13.04" remaining="607" etc="1507480708"/>
+<taskprogress task="SYN Stealth Scan" time="1507480131" percent="15.10" remaining="681" etc="1507480811"/>
+<taskprogress task="SYN Stealth Scan" time="1507480161" percent="17.17" remaining="729" etc="1507480890"/>
+<taskprogress task="SYN Stealth Scan" time="1507480209" percent="20.47" remaining="774" etc="1507480982"/>
+<taskprogress task="SYN Stealth Scan" time="1507480494" percent="40.07" remaining="724" etc="1507481218"/>
+<taskprogress task="SYN Stealth Scan" time="1507480590" percent="46.67" remaining="663" etc="1507481253"/>
+<taskprogress task="SYN Stealth Scan" time="1507480677" percent="52.67" remaining="600" etc="1507481276"/>
+<taskprogress task="SYN Stealth Scan" time="1507480761" percent="58.44" remaining="535" etc="1507481295"/>
+<taskprogress task="SYN Stealth Scan" time="1507480842" percent="64.02" remaining="468" etc="1507481310"/>
+<taskprogress task="SYN Stealth Scan" time="1507480920" percent="69.38" remaining="402" etc="1507481322"/>
+<taskprogress task="SYN Stealth Scan" time="1507480998" percent="74.74" remaining="334" etc="1507481332"/>
+<taskprogress task="SYN Stealth Scan" time="1507481073" percent="79.90" remaining="268" etc="1507481340"/>
+<taskprogress task="SYN Stealth Scan" time="1507481148" percent="85.05" remaining="200" etc="1507481348"/>
+<taskprogress task="SYN Stealth Scan" time="1507481223" percent="90.21" remaining="132" etc="1507481355"/>
+<taskprogress task="SYN Stealth Scan" time="1507481298" percent="95.37" remaining="63" etc="1507481361"/>
+<taskend task="SYN Stealth Scan" time="1507481574" extrainfo="65535 total ports"/>
+<taskbegin task="Service scan" time="1507481575"/>
+<taskend task="Service scan" time="1507481581" extrainfo="3 services on 1 host"/>
+<taskbegin task="NSE" time="1507481583"/>
+<taskend task="NSE" time="1507481590"/>
+<taskbegin task="NSE" time="1507481590"/>
+<taskend task="NSE" time="1507481590"/>
+<host starttime="1507480009" endtime="1507481590"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.2.64" addrtype="ipv4"/>
+<address addr="7C:D1:C3:EB:19:65" addrtype="mac" vendor="Apple"/>
+<hostnames>
+<hostname name="bulldog.BreakfastHouse" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 20:8b:fc:9e:d9:2e:28:22:6b:2e:0e:e3:72:c5:bb:52 (RSA)&#xa;ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiHL0OEsKEESaq+MbExB+ocjSz31GOmJe0JBUJimurGSeLE8bfamyKqy/cV7EbkOTKbD1tgg6fzWxaI7klJma7v5op5rHJ0IzoKtInGcQ19I3IU8BeYC5OcECY4QF6nIaFOi+qXoEGWlUtSGCoH17eCBdcRovZRy0V8XR6TSdwyrK2YXqlS+shimPb0lasHZnzEqgexjmFrLMKUX0cAiYfMhwcbd5uzTAvrwfjpgoeZF0qB+rDgNJLwq0N7isM2/klBMEnFMgSD3UVzlUqaZmPK2v9PNbEupKmoPCRRLgvNoM9RR4vlJOKKopEYLDpApr5Z3mfxmysZhZtFxZwYgdj&#xa;  256 cd:bd:45:d8:5c:e4:8c:b6:91:e5:39:a9:66:cb:d7:98 (ECDSA)&#xa;ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD3Hr5fqraEEcFDFP8GzWS88qcZZ03M0DBTG3t5nutNWqN7iVndpR6QL0ZCC6EK7AYWqbRaJL5iuKtQAcPO5BYg=&#xa;  256 2f:ba:d5:e5:9f:a2:43:e5:3b:24:2c:10:c2:0a:da:66 (EdDSA)&#xa;ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHCq0fC/D+l/N14vGpfudUDu9W2Q/qUgf/HhPS05hjA1"><table>
+<elem key="fingerprint">208bfc9ed92e28226b2e0ee372c5bb52</elem>
+<elem key="bits">2048.0</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCiHL0OEsKEESaq+MbExB+ocjSz31GOmJe0JBUJimurGSeLE8bfamyKqy/cV7EbkOTKbD1tgg6fzWxaI7klJma7v5op5rHJ0IzoKtInGcQ19I3IU8BeYC5OcECY4QF6nIaFOi+qXoEGWlUtSGCoH17eCBdcRovZRy0V8XR6TSdwyrK2YXqlS+shimPb0lasHZnzEqgexjmFrLMKUX0cAiYfMhwcbd5uzTAvrwfjpgoeZF0qB+rDgNJLwq0N7isM2/klBMEnFMgSD3UVzlUqaZmPK2v9PNbEupKmoPCRRLgvNoM9RR4vlJOKKopEYLDpApr5Z3mfxmysZhZtFxZwYgdj</elem>
+</table>
+<table>
+<elem key="fingerprint">cdbd45d85ce48cb691e539a966cbd798</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD3Hr5fqraEEcFDFP8GzWS88qcZZ03M0DBTG3t5nutNWqN7iVndpR6QL0ZCC6EK7AYWqbRaJL5iuKtQAcPO5BYg=</elem>
+</table>
+<table>
+<elem key="fingerprint">2fbad5e59fa243e53b242c10c20ada66</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIHCq0fC/D+l/N14vGpfudUDu9W2Q/qUgf/HhPS05hjA1</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="WSGIServer" version="0.1" extrainfo="Python 2.7.12" method="probed" conf="10"><cpe>cpe:/a:python:wsgiref:0.1</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="WSGIServer/0.1 Python/2.7.12"><elem>WSGIServer/0.1 Python/2.7.12</elem>
+</script><script id="http-title" output="Bulldog Industries"><elem key="title">Bulldog Industries</elem>
+</script></port>
+<port protocol="tcp" portid="8080"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" product="WSGIServer" version="0.1" extrainfo="Python 2.7.12" method="probed" conf="10"><cpe>cpe:/a:python:wsgiref:0.1</cpe></service><script id="http-methods" output="&#xa;  Supported Methods: GET HEAD OPTIONS"><table key="Supported Methods">
+<elem>GET</elem>
+<elem>HEAD</elem>
+<elem>OPTIONS</elem>
+</table>
+</script><script id="http-server-header" output="WSGIServer/0.1 Python/2.7.12"><elem>WSGIServer/0.1 Python/2.7.12</elem>
+</script><script id="http-title" output="Bulldog Industries"><elem key="title">Bulldog Industries</elem>
+</script></port>
+</ports>
+<os><portused state="open" proto="tcp" portid="23"/>
+<portused state="closed" proto="tcp" portid="1"/>
+<portused state="closed" proto="udp" portid="41584"/>
+<osmatch name="Linux 3.2 - 4.8" accuracy="100" line="62168">
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="3.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:3</cpe></osclass>
+<osclass type="general purpose" vendor="Linux" osfamily="Linux" osgen="4.X" accuracy="100"><cpe>cpe:/o:linux:linux_kernel:4</cpe></osclass>
+</osmatch>
+<osfingerprint fingerprint="OS:SCAN(V=7.60%E=4%D=10/8%OT=23%CT=1%CU=41584%PV=Y%DS=1%DC=D%G=Y%M=7CD1C3%T&#xa;OS:M=59DA57F6%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=2%ISR=10A%TI=Z%CI=I%TS=8&#xa;OS:)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B&#xa;OS:4ST11NW7%O6=M5B4ST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120&#xa;OS:)ECN(R=Y%DF=Y%T=40%W=7210%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+&#xa;OS:%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)&#xa;OS:T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A&#xa;OS:=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%D&#xa;OS:F=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=4&#xa;OS:0%CD=S)&#xa;"/>
+</os>
+<uptime seconds="1438" lastboot="Sun Oct  8 11:29:12 2017"/>
+<distance value="1"/>
+<tcpsequence index="256" difficulty="Good luck!" values="2BC0135B,8785E245,4D69F6A7,934B73AD,7B747417,3CC457A5"/>
+<ipidsequence class="All zeros" values="0,0,0,0,0,0"/>
+<tcptssequence class="other" values="573E6,573FF,57418,57431,5744A,57463"/>
+<trace>
+<hop ttl="1" ipaddr="192.168.2.64" rtt="1.60" host="bulldog.BreakfastHouse"/>
+</trace>
+<times srtt="1604" rttvar="191" to="100000"/>
+</host>
+<taskbegin task="NSE" time="1507481590"/>
+<taskend task="NSE" time="1507481590"/>
+<taskbegin task="NSE" time="1507481590"/>
+<taskend task="NSE" time="1507481590"/>
+<runstats><finished time="1507481590" timestr="Sun Oct  8 11:53:10 2017" elapsed="1581.34" summary="Nmap done at Sun Oct  8 11:53:10 2017; 1 IP address (1 host up) scanned in 1581.34 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,23 @@
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          192.168.2.64
++ Target Hostname:    192.168.2.64
++ Target Port:        80
++ Start Time:         2017-10-08 15:11:17 (GMT-5)
+---------------------------------------------------------------------------
++ Server: WSGIServer/0.1 Python/2.7.12
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ OSVDB-3092: /dev/: This might be interesting...
++ 7552 requests: 17 error(s) and 3 item(s) reported on remote host
++ End Time:           2017-10-08 15:15:33 (GMT-5) (256 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
+
+      *********************************************************************
+      Portions of the server's headers (Python/2.7.12) are not in
+      the Nikto database or are newer than the known string. Would you like
+      to submit this information (*no server specific data*) to CIRT.net
+      for a Nikto update (or you may email to sullo@cirt.net) (y/n)? 

@@ -1,0 +1,58 @@
+# Nmap 7.60 scan initiated Sun Oct  8 11:26:49 2017 as: nmap -vv -Pn -A -sC -sS -T 4 -p- -oN /root/scripts/recon_enum/results/exam/192.168.2.64.nmap -oX /root/scripts/recon_enum/results/exam/nmap/192.168.2.64_nmap_scan_import.xml 192.168.2.64
+Increasing send delay for 192.168.2.64 from 5 to 10 due to 25 out of 61 dropped probes since last increase.
+adjust_timeouts2: packet supposedly had rtt of -173454 microseconds.  Ignoring time.
+adjust_timeouts2: packet supposedly had rtt of -173454 microseconds.  Ignoring time.
+Nmap scan report for bulldog.BreakfastHouse (192.168.2.64)
+Host is up, received arp-response (0.0016s latency).
+Scanned at 2017-10-08 11:26:49 CDT for 1581s
+Not shown: 65532 closed ports
+Reason: 65532 resets
+PORT     STATE SERVICE REASON         VERSION
+23/tcp   open  ssh     syn-ack ttl 64 OpenSSH 7.2p2 Ubuntu 4ubuntu2.2 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 20:8b:fc:9e:d9:2e:28:22:6b:2e:0e:e3:72:c5:bb:52 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCiHL0OEsKEESaq+MbExB+ocjSz31GOmJe0JBUJimurGSeLE8bfamyKqy/cV7EbkOTKbD1tgg6fzWxaI7klJma7v5op5rHJ0IzoKtInGcQ19I3IU8BeYC5OcECY4QF6nIaFOi+qXoEGWlUtSGCoH17eCBdcRovZRy0V8XR6TSdwyrK2YXqlS+shimPb0lasHZnzEqgexjmFrLMKUX0cAiYfMhwcbd5uzTAvrwfjpgoeZF0qB+rDgNJLwq0N7isM2/klBMEnFMgSD3UVzlUqaZmPK2v9PNbEupKmoPCRRLgvNoM9RR4vlJOKKopEYLDpApr5Z3mfxmysZhZtFxZwYgdj
+|   256 cd:bd:45:d8:5c:e4:8c:b6:91:e5:39:a9:66:cb:d7:98 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBD3Hr5fqraEEcFDFP8GzWS88qcZZ03M0DBTG3t5nutNWqN7iVndpR6QL0ZCC6EK7AYWqbRaJL5iuKtQAcPO5BYg=
+|   256 2f:ba:d5:e5:9f:a2:43:e5:3b:24:2c:10:c2:0a:da:66 (EdDSA)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIHCq0fC/D+l/N14vGpfudUDu9W2Q/qUgf/HhPS05hjA1
+80/tcp   open  http    syn-ack ttl 64 WSGIServer 0.1 (Python 2.7.12)
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-server-header: WSGIServer/0.1 Python/2.7.12
+|_http-title: Bulldog Industries
+8080/tcp open  http    syn-ack ttl 64 WSGIServer 0.1 (Python 2.7.12)
+| http-methods: 
+|_  Supported Methods: GET HEAD OPTIONS
+|_http-server-header: WSGIServer/0.1 Python/2.7.12
+|_http-title: Bulldog Industries
+MAC Address: 7C:D1:C3:EB:19:65 (Apple)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.2 - 4.8
+TCP/IP fingerprint:
+OS:SCAN(V=7.60%E=4%D=10/8%OT=23%CT=1%CU=41584%PV=Y%DS=1%DC=D%G=Y%M=7CD1C3%T
+OS:M=59DA57F6%P=x86_64-pc-linux-gnu)SEQ(SP=100%GCD=2%ISR=10A%TI=Z%CI=I%TS=8
+OS:)OPS(O1=M5B4ST11NW7%O2=M5B4ST11NW7%O3=M5B4NNT11NW7%O4=M5B4ST11NW7%O5=M5B
+OS:4ST11NW7%O6=M5B4ST11)WIN(W1=7120%W2=7120%W3=7120%W4=7120%W5=7120%W6=7120
+OS:)ECN(R=Y%DF=Y%T=40%W=7210%O=M5B4NNSNW7%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+
+OS:%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)
+OS:T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A
+OS:=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%D
+OS:F=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=4
+OS:0%CD=S)
+
+Uptime guess: 0.017 days (since Sun Oct  8 11:29:12 2017)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=256 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   1.60 ms bulldog.BreakfastHouse (192.168.2.64)
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Oct  8 11:53:10 2017 -- 1 IP address (1 host up) scanned in 1581.34 seconds
